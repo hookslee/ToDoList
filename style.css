@@ -1,0 +1,54 @@
+:root {
+
+    --main-font: 'Courier New', Courier, monospace;
+
+    --main-back-colour: rgb(219, 219, 219); 
+    --main-fore-colour: rgb(58, 58, 58); 
+    
+    --dark-back-colour: rgb(58, 58, 58); 
+    --dark-fore-colour: rgb(219, 219, 219);
+
+    --highlight-back-colour: rgb(0, 194, 194); 
+    --highlight-fore-colour: rgb(240, 240, 240); 
+
+    --complete-back-colour: rgb(48, 48, 48); 
+    --complete-fore-colour: rgb(0, 255, 0);
+    --outstanding-back-colour: rgb(104, 104, 104); 
+    --outstanding-fore-colour: rgb(255, 220, 220);
+}
+
+body {
+    background-color: var(--main-back-colour);
+    color: var(--main-fore-colour);
+    font-family: var(--main-font);
+}
+
+.header{
+    background-color: var(--highlight-back-colour);
+    color: var(--highlight-fore-colour);
+    height: auto;
+    padding: 20px
+
+}
+
+li {
+    background-color: var(--outstanding-back-colour);  
+    color: var(--outstanding-fore-colour);
+    list-style-type: none;
+    height: auto;
+    padding: 5px;
+}
+
+.completed{
+    background-color: var(--complete-back-colour);  
+    color: var(--complete-fore-colour);
+}
+
+#control-wrapper {
+    background-color: var(--dark-back-colour);  
+    color: var(--dark-fore-colour);
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
